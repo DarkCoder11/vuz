@@ -1,0 +1,14 @@
+.container {
+  padding-top: 71px;
+  @extend %flex-center;
+  flex-direction: column;
+
+  &__champions {
+    @extend %flex-between;
+    margin-top: 15px;
+
+    div:not(:last-child) {
+      margin-right: 11px;
+    }
+  }
+}

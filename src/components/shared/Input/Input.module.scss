@@ -1,0 +1,51 @@
+.container {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  padding: 11px 10px;
+  color: $gray_scale_66;
+  background: $white;
+  border: 1px solid $gray_scale_77;
+  border-radius: 4px;
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 19px;
+    color: $gray_scale_66;
+  }
+
+  &:hover {
+    border-color: $gray_scale_77;
+  }
+
+  &:active,
+  &:focus {
+    border-color: gray;
+  }
+
+  &_with_icon {
+    padding-right: 23px;
+    padding-left: 36px;
+  }
+
+  &__inner {
+    position: relative;
+    @extend %flex-align;
+    @extend %input-margin;
+
+    &_disabled {
+      background-color: $gray_scale_97;
+    }
+  }
+
+  &__label {
+    font-weight: 600;
+    color: $gray_scale_55;
+  }
+}
+
+.icon {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}

@@ -1,0 +1,15 @@
+.container {
+  gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 41px 45px 0 38px;
+
+  &__clear {
+    color: $gray_scale_12;
+    font-size: 20px;
+    line-height: 23px;
+    text-decoration: underline !important;
+    margin-left: 11px;
+    padding: 0;
+  }
+}

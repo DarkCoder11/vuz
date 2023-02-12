@@ -1,0 +1,84 @@
+.container {
+  width: 100%;
+  max-width: 1080px;
+  margin: 57px auto;
+
+  &__body {
+    overflow: hidden;
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+
+    &__content {
+      max-height: 272px;
+      overflow-y: scroll;
+
+      &::-webkit-scrollbar {
+        -webkit-appearance: none;
+        width: 7px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        border-radius: 4px;
+        background-color: rgba(0, 0, 0, .5);
+        -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+      }
+
+      &__item {
+        display: grid;
+        align-items: center;
+        padding: 25px 22px;
+        grid-template-columns:
+          minmax(0, 303px) minmax(0, 297px) minmax(0, 83px) minmax(0, 92px)
+          minmax(0, 110px) minmax(0, 125px) minmax(0, 62px);
+
+        p {
+          max-width: 150px;
+        }
+
+        &_selected {
+          background-color: $gray_scale_92;
+        }
+      }
+
+      &__row {
+        display: flex;
+        align-items: center;
+        gap: 29px;
+      }
+
+      &__tags {
+        display: flex;
+        gap: 15px;
+      }
+
+      &__stats {
+        text-align: center;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        color: $black;
+
+        &_max {
+          color: $red;
+        }
+      }
+    }
+  }
+}
+
+.header {
+  display: grid;
+  margin-bottom: 10px;
+  grid-template-columns:
+    minmax(0, 303px) minmax(0, 297px) minmax(0, 83px) minmax(0, 92px)
+    minmax(0, 110px) minmax(0, 125px) minmax(0, 62px);
+
+  &__item {
+    display: flex;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    color: $black;
+  }
+}

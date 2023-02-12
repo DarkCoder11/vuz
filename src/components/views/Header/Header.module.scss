@@ -1,0 +1,12 @@
+.container {
+  height: 76px;
+  position: relative;
+  background-color: $black;
+
+  &__logo {
+    position: absolute;
+    top: 32px;
+    left: 50%;
+    transform: translateX(-50%)
+  }
+}

@@ -1,0 +1,19 @@
+.container {
+  @extend %flex-align;
+
+  &__name {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    color: $black;
+    margin-left: 26px;
+  }
+
+  &__image {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border: 1px solid #217aff;
+    border-radius: 50%;
+  }
+}

@@ -1,0 +1,20 @@
+.container {
+  width: 100%;
+  max-width: 920px;
+  position: relative;
+  margin: 37px auto 0;
+
+  &__icon {
+    left: 0;
+    top: 50%;
+    right: 0;
+    position: absolute;
+  }
+
+  &__input {
+    max-width: 500px;
+    display: block;
+    margin: 0 auto;
+    @extend %flex-center;
+  }
+}

@@ -1,0 +1,63 @@
+.container {
+  display: flex;
+  position: relative;
+  cursor: pointer;
+  max-width: 24px;
+  width: 100%;
+  height: 24px;
+  align-items: center;
+
+  &__wrapper {
+    position: relative;
+    margin-right: 24px;
+  }
+
+  &:hover input ~ .checkmark {
+    background-color: $gray;
+  }
+
+  input:checked ~ .checkmark {
+    background-color: $blue;
+  }
+
+  &__input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  &__after {
+    position: absolute;
+    top: calc(50% - 12px);
+    left: 0px;
+    height: 24px;
+    width: 24px;
+    border: 2px solid #217aff;
+    border-radius: 4px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      display: none;
+    }
+  }
+
+  input:checked ~ &__after {
+    background: #217aff;
+    border-radius: 4px;
+    border: none;
+
+    &:after {
+      display: block;
+      left: 9px;
+      top: 4px;
+      width: 6px;
+      height: 11px;
+      border: solid white;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.container {
+  margin-top: 40px;
+
+  &__stats {
+    display: flex;
+  }
+
+  &__info {
+    font-size: 12px;
+    line-height: 14px;
+    color: $gray_scale_55;
+    margin-top: 10px;
+  }
+}

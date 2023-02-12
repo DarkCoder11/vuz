@@ -1,0 +1,35 @@
+.container {
+  font-weight: bold;
+  border-radius: 8px;
+  background-color: $blue;
+
+  &__left {
+    @extend %flex-align;
+    padding: 10px 32px;
+
+    svg {
+      margin-right: 8px;
+    }
+  }
+
+  &:disabled {
+    color: $gray_scale_55;
+    background-color: $gray_scale_92;
+  }
+
+  &_medium {
+    padding: 11px 40px;
+  }
+
+  &_large {
+    padding: 18px 40px;
+  }
+
+  &_ghost {
+    background-color: transparent;
+    color: $ghost;
+    &:hover {
+      background: none;
+    }
+  }
+}
